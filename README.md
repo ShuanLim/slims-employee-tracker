@@ -2,9 +2,8 @@
 
 ## Description
 
-```
-placeholder
-```
+A Node.JS CLI application designed to view, track, and manage company employees.
+This application utilizes Node.JS, Inquirer, and MySQL.
 
 ## Table Of Contents
 
@@ -49,7 +48,11 @@ THEN I am prompted to select an employee to update and their new role and this i
 ## Installation Method
 
 ```
-placeholder
+npm init
+```
+
+```
+npm i inquirer
 ```
 
 ```
@@ -58,11 +61,13 @@ placeholder
 
 ## How To Use
 
-Run command:
+Run the command below at the root of the app:
 
 ```
-placeholder
+npm start
 ```
+
+Then answer the prompted questions.
 
 ## Screenshots
 
