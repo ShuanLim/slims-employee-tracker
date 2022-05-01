@@ -1,4 +1,4 @@
-# Slim's README.md Generator
+# Slim's Employee Tracker
 
 ## Description
 
