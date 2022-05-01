@@ -231,6 +231,10 @@ function updateEmployeeRole() {
 
 }
 
+// function deleteEmployee() {
+
+// }
+
 function exitApp() {
     connection.end();
 };
