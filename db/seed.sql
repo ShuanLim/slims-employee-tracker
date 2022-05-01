@@ -16,7 +16,7 @@ VALUES
 ('Project Manager', 125000, 3),
 ('Sales Lead', 70000, 4),
 ('Accountant', 80000, 5),
-('HR Rep', 75000, 6,);
+('HR Rep', 75000, 6);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
