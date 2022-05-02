@@ -111,9 +111,7 @@ Then answer the prompted questions.
 
 ## Link to video demonstration
 
-```
-placeholder
-```
+<a href='https://drive.google.com/file/d/1HmXARB_fRW87RIcYFkU3iM-YSy52u6BM/view'>Video Demonstration</a>
 
 ## Contributions
 
