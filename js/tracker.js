@@ -32,7 +32,7 @@ function options() {
             "Add a department",
             "Add a role",
             "Add an employee",
-            "Update an employee role",
+            // "Update an employee role", *need to sort out*
             "EXIT"
         ]
     }).then(function (answer) {
@@ -55,9 +55,9 @@ function options() {
             case "Add an employee":
                 addEmployee();
                 break;
-            case "Update an employee role":
-                updateEmployeeRole();
-                break;
+            // case "Update an employee role": *need to sort out*
+            //     updateEmployeeRole();
+            //     break;
             case "EXIT": 
                 exitApp();
                 break;
@@ -67,6 +67,7 @@ function options() {
     })
 };
 
+// function to view departments 
 function viewDepartments() {
     const query = 'SELECT * FROM department';
     connection.query(query, function(err, res) {
@@ -76,6 +77,7 @@ function viewDepartments() {
     })
 }
 
+// function to view roles 
 function viewRoles() {
     const query = 'SELECT * FROM role';
     connection.query(query, function(err, res) {
@@ -85,6 +87,7 @@ function viewRoles() {
     })
 }
 
+// function to view employees
 function viewEmployees() {
     const query = 'SELECT * FROM employee';
     connection.query(query, function(err, res) {
@@ -120,6 +123,7 @@ function addDepartment() {
 
 };
 
+// function to add roles
 function addRole() {
     connection.query('SELECT * FROM department', function(err, res) {
         if(err)throw err;
@@ -139,11 +143,11 @@ function addRole() {
                 name: 'Department',
                 type: 'list',
                 choices: function() {
-                    const deptArry = [];
+                    const deptRole = [];
                     for (let i = 0; i < res.length; i++) {
-                    deptArry.push(res[i].name);
+                    deptRole.push(res[i].name);
                     }
-                    return deptArry;
+                    return deptRole;
                 },
             }
         ]).then(function (answer) {
@@ -171,6 +175,7 @@ function addRole() {
 
 };
 
+// function to add employees
 function addEmployee() {
     connection.query('SELECT * FROM role', function (err, res) {
         if(err)throw err;
@@ -178,7 +183,7 @@ function addEmployee() {
             {
                 name: 'first_name',
                 type: 'input', 
-                message: "What is the employee's fist name? ",
+                message: "What is the employee's first name? ",
             },
             {
                 name: 'last_name',
@@ -194,7 +199,7 @@ function addEmployee() {
                 name: 'role', 
                 type: 'list',
                 choices: function() {
-                var roleArray = [];
+                let roleArray = [];
                 for (let i = 0; i < res.length; i++) {
                     roleArray.push(res[i].title);
                 }
@@ -220,20 +225,22 @@ function addEmployee() {
                 },
                 function (err) {
                     if (err) throw err;
-                    console.log('Your employee has been added!');
+                    console.log('Your employee has been added.');
                     options();
                 })
             })
     })
 };
 
-function updateEmployeeRole() {
-
-}
-
-// function deleteEmployee() {
+// function to update employee roles *need to sort out*
+// function updateEmployeeRole() {
 
 // }
+
+// function to delete an employee *need to sort out*
+// // function deleteEmployee() {
+
+// // }
 
 function exitApp() {
     connection.end();

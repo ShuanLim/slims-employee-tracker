@@ -47,33 +47,67 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Installation Method
 
+Run the following commands prior to using the application:
+
 ```
 npm init
+```
+
+```
+npm i
+```
+
+```
+npm i mysql2
+```
+
+```
+npm i console.table
 ```
 
 ```
 npm i inquirer
 ```
 
-```
-placeholder
-```
-
 ## How To Use
 
-Run the command below at the root of the app:
+Run the command below from the js directory of the app:
 
 ```
-npm start
+node tracker.js
 ```
 
 Then answer the prompted questions.
 
 ## Screenshots
 
-```
-placeholder
-```
+#### Start Screen
+
+![startScreen](https://user-images.githubusercontent.com/79289373/166171841-4bfd488d-df45-48a3-8f13-69c594e55946.png)
+
+#### View Department
+
+![viewDept](https://user-images.githubusercontent.com/79289373/166171866-fabf9b9d-c03a-4da9-b97a-858729f522ce.png)
+
+#### View Roles
+
+![viewRoles](https://user-images.githubusercontent.com/79289373/166171888-28532deb-84b7-45df-9383-a696f84cf38b.png)
+
+#### View Employees
+
+![viewEmployee](https://user-images.githubusercontent.com/79289373/166172848-12b7718d-fb8a-4eb0-9134-1e26a5edfae7.png)
+
+#### Add Department
+
+![addDept](https://user-images.githubusercontent.com/79289373/166172001-c7253683-dc37-4a93-a598-1103e9ab5ff7.png)
+
+#### Add Role
+
+![addRole](https://user-images.githubusercontent.com/79289373/166171927-5b10ac22-f698-4294-9a9a-56457d4b7207.png)
+
+#### Add Employee
+
+![addEmployee](https://user-images.githubusercontent.com/79289373/166172034-8a2313fd-ee71-4052-8a20-690ab6afe3e6.png)
 
 ## Link to video demonstration
 
